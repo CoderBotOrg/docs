@@ -32,7 +32,7 @@ jobs:
     - working-directory: folder/
       run: |
         cd repo
-        npx vuepress build pages/
+        npm run build
         mkdir dist
         cp pages/.vuepress/dist/* dist/ -r
         cd ..
