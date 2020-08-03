@@ -12,6 +12,7 @@ jobs:
       with:
         repository: CoderBotOrg/docs
         path: folder/repo
+        lfs: true 
 
     - name: Checkout CoderBotOrg/docs
       uses: actions/checkout@v2
