@@ -19,6 +19,7 @@ jobs:
         repository: CoderBotOrg/docs
         ref: master
         path: folder/build
+        lfs: true
         
     - uses: actions/setup-node@v1
       with:
