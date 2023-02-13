@@ -1,37 +1,53 @@
 {
-  "name": "docs",
-  "version": "0.1.0",
-  "description": "CoderBot documentation, guides and manual",
+  "name": "coderbot_docs",
+  "description": "This is the CoderBot documentation repository: a [Vue.js](https://vuejs.org/) application using [VuePress](https://vuepress.vuejs.org/) (1.x alpha).",
+  "version": "1.0.0",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev pages/",
-    "build": "vuepress build pages/"
+    "docs:dev": "vitepress dev docs --port 8081 --host=0.0.0.0",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.14.3",
+    "ansi-sequence-parser": "^1.1.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "csstype": "^2.6.21",
+    "esbuild": "^0.16.17",
+    "estree-walker": "^2.0.2",
+    "function-bind": "^1.1.1",
+    "has": "^1.0.3",
+    "is-core-module": "^2.11.0",
+    "jsonc-parser": "^3.2.0",
+    "magic-string": "^0.25.9",
+    "nanoid": "^3.3.4",
+    "path-parse": "^1.0.7",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.21",
+    "preact": "^10.12.1",
+    "resolve": "^1.22.1",
+    "rollup": "^3.15.0",
+    "shiki": "^0.14.1",
+    "source-map": "^0.6.1",
+    "source-map-js": "^1.0.2",
+    "sourcemap-codec": "^1.4.8",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "vite": "^4.1.1",
+    "vscode-oniguruma": "^1.7.0",
+    "vscode-textmate": "^8.0.0"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.46",
+    "vue": "^3.2.47"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CoderBotOrg/docs.git"
   },
-  "author": "Antonio Vivace",
-  "license": "GPL-3.0-or-later",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/CoderBotOrg/docs/issues"
   },
-  "homepage": "https://github.com/CoderBotOrg/docs#readme",
-  "dependencies": {
-    "typeface-nunito": "0.0.54",
-    "typeface-roboto-mono": "0.0.54",
-    "vuepress": "^1.5.0"
-  },
-  "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
-    "copyfiles": "^2.2.0",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^2.5.4",
-    "typeface-overpass-mono": "0.0.71",
-    "webpack": "^4.29.0"
-  }
+  "homepage": "https://github.com/CoderBotOrg/docs#readme"
 }
