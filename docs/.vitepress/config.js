@@ -26,6 +26,7 @@ export default {
         items: [
           { text: 'Programmazione', link: '/usermanual/#programmazione' },
           { text: 'Attività', link: '/usermanual/#attivita' },
+          { text: 'Blocchi', link: '/usermanual/blocks/' },
         ]
       },
       {

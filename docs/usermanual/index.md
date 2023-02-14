@@ -30,6 +30,7 @@ Mentre questa è quella **base**:
 
 La parte destra, inizialmente vuota, è dove trascinerai i blocchi per comporre il tuo programma.
 
+Consulta l'elenco dei [blocchi di programmazione speciali di CoderBot](blocks/)
 ### Salvare e caricare programmi
 
 Utilizzando il pulsante **Salva** puoi salvare il lavoro fatto fin'ora su CoderBot. Utilizzando **Salva con Nome** creerai un'altra copia del programma, salvandolo con un altro nome.
