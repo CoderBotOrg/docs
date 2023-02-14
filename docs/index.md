@@ -9,19 +9,8 @@ Qui troverai tutto il materiale disponibile per montare, configurare ed imparare
 - [Istruzioni di montaggio](kit/)
 - [Elenco delle parti](description/)
 - [Manuale di configurazione](manual/)
-  - [Avvio](manual/#messa-in-funzione)
-  - [Ricarica della Batteria](manual/#ricarica-della-batteria)
-  - Ripristino
-    - da software
-    - da microsd
-  - [Aggiornamento](manual/#aggiornamento)
-  - [Impostazioni](manual/#impostazioni)
-- Manuale d'uso
-    - Programmazione
-    - Attività
+- [Manuale d'uso](usermanual/)
 - [Guide](guides/)
-  - [Muovere CoderBot](guides/#muovere-coderbot)
-  - [Programmare con i sensori](guides/#programmiamo-con-i-sensori)
 
 </div>
 

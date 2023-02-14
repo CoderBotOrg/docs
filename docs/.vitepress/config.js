@@ -1,14 +1,14 @@
 export default {
   title: 'Documentazione di CoderBot',
   description: 'Guida all\'uso di CoderBot',
-  srcDir: './',
   themeConfig: {
+    outlineTitle: 'Su questa pagina',
     sidebar: [
       {
         text: 'Kit di montaggio',
         items: [
-          { text: 'Istruzioni di montaggio', link: '/kit/index.html' },
-          { text: 'Elenco delle parti', link: '/parts/' },
+          { text: 'Istruzioni di montaggio', link: '/kit/' },
+          { text: 'Elenco delle parti', link: '/description/' },
         ]
       },
       {
@@ -16,18 +16,23 @@ export default {
         items: [
           { text: 'Avvio', link: '/manual/#messa-in-funzione' },
           { text: 'Ricarica della Batteria', link: '/manual/#ricarica-della-batteria' },
-          { text: 'Ripristino', link: '/manual/#reset' },
+          { text: 'Impostazioni', link: '/manual/#impostazioni' },
           { text: 'Aggiornamento', link: '/manual/#aggiornamento' },
-          { text: 'Impostazioni', link: '/manual/#settings' },
+          { text: 'Ripristino', link: '/manual/#ripristino-impostazioni' },
         ]
       },
       {
-        text: 'Guida all\'uso',
+        text: 'Manuale d\'uso',
         items: [
-          { text: 'Programmazione', link: '/guides/#programming' },
-          { text: 'Attività', link: '/guides/#activities' },
+          { text: 'Programmazione', link: '/usermanual/#programmazione' },
+          { text: 'Attività', link: '/usermanual/#attivita' },
+        ]
+      },
+      {
+        text: 'Guide',
+        items: [
           { text: 'Muovere CoderBot', link: '/guides/#muovere-coderbot' },
-          { text: 'Programmare con i sensori', link: '/guides/#programmiamo-con-i-sensori' },
+          { text: 'Programmiamo con i sensori', link: '/guides/#programmiamo-con-i-sensori' },
         ]
       },
     ]

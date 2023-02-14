@@ -55,7 +55,6 @@ Ripetere per l’altro motore
 
 ## 2 - Sfera
 
-
 2.1 Fissare i distanziali da 20mm alla sfera utilizzando due viti M3 da 10mm.
 ![](/images/kit/kit_08.jpg)
 <br><br>
