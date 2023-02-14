@@ -1,6 +1,7 @@
 .DS_Store
 *.swp
 pages/.vuepress/dist
+**/dist/**
 
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node

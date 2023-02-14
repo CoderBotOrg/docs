@@ -27,6 +27,7 @@ export default {
           { text: 'Programmazione', link: '/usermanual/#programmazione' },
           { text: 'Attività', link: '/usermanual/#attivita' },
           { text: 'Blocchi', link: '/usermanual/blocks/' },
+          { text: 'Programmi', link: '/usermanual/programs/' },
         ]
       },
       {
@@ -39,7 +40,7 @@ export default {
     ]
   },
   head: [
-    ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-52649755-1'}],
-    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'UA-52649755-1');"]
+    ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-JH5JX4PBZG'}],
+    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-JH5JX4PBZG');"]
   ]
 }
