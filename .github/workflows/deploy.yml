@@ -46,10 +46,11 @@ jobs:
             ${{ runner.os }}-build-
       - name: Install dependencies
         run: npm ci
-      - name: Static HTML export with VitePress
+      - name: Static HTML export with VitePress - /docs (for coderbot)
         run: |
+          mv ./docs/.vitepress/config.js ./docs/.vitepress/config_root.js 
+          mv ./docs/.vitepress/config_docs.js ./docs/.vitepress/config.js 
           npm run docs:build
-          ls -l ./docs/.vitepress/dist
           tar czf ./docs.tgz -C ./docs/.vitepress/dist .
       - name: Create Release
         id: create_release
@@ -61,10 +62,11 @@ jobs:
           release_name: ${{ github.ref_name }}
           draft: ${{ contains( github.ref_name, 'main') }}
           prerelease: false
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./docs/.vitepress/dist
+      - name: Static HTML export with VitePress - / (for website)
+        run: |
+          mv ./docs/.vitepress/config.js ./docs/.vitepress/config_docs.js 
+          mv ./docs/.vitepress/config_root.js ./docs/.vitepress/config.js 
+          npm run docs:build
       - name: Upload built docs to Release
         uses: actions/upload-release-asset@v1
         env:
@@ -83,6 +85,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release_id: ${{ steps.publish_info.outputs.release_id }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./docs/.vitepress/dist
 
   # Deployment job
   deploy:

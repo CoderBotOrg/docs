@@ -1,5 +1,5 @@
 export default {
-  base: "/",
+  base: "/docs",
   title: 'Documentazione di CoderBot',
   description: 'Guida all\'uso di CoderBot',
   themeConfig: {
