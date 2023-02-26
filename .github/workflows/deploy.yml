@@ -46,11 +46,32 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Static HTML export with VitePress
-        run: npm run docs:build
+        run: |
+          npm run docs:build
+          tar czf docs.tgz -C ./docs/.vitepress/dist *
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: ${{ github.ref_name }}
+          draft: ${{ contains( github.ref_name, 'rc') }}
+          prerelease: false
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./docs/.vitepress/dist
+      - name: Upload built docs to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.upload_info.outputs.upload_url }}
+          asset_path: docs.tgz
+          asset_name: docs.tgz
+          asset_content_type: application/gzip
 
   # Deployment job
   deploy:
