@@ -1,6 +1,6 @@
 # Manuale d'Uso
 
-Questa parte copre l'utilizzo vero e proprio dell'applicazione. [Accendi CoderBot](/manual/#messa-in-funzione), connettiti alla rete WiFi e accedi a [coder.bot](http://coder.bot). Dovresti essere di fronte alla schermata principale di CoderBot:
+Questa parte copre l'utilizzo vero e proprio dell'applicazione. [Accendi CoderBot](/manual/#messa-in-funzione), connettiti alla rete WiFi e accedi a [http://coderbot.local](http://coderbot.local) (oppure a [http://10.0.0.1/](http://10.0.0.1/)). Dovresti essere di fronte alla schermata principale di CoderBot:
 
 ![](/images/usermanual/landing.png)
 
