@@ -1,8 +1,13 @@
-export default {
-  base: "/docs",
+import { defineConfig } from 'vitepress';
+
+export default defineConfig({
+  base: "/",
   title: 'Documentazione di CoderBot',
   description: 'Guida all\'uso di CoderBot',
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     outlineTitle: 'Su questa pagina',
     sidebar: [
       {
@@ -44,4 +49,4 @@ export default {
     ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-JH5JX4PBZG'}],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-JH5JX4PBZG');"]
   ]
-}
+});
